@@ -14,6 +14,8 @@ Our team found ways to enhance current methods by employing larger datasets and 
 # Flask Application
 Run `flask --app App/app run`
 
+Demo Video: https://www.youtube.com/watch?v=w3qqzzLrdY0
+
 ## Dataset
 
 We will be using the `good-books-10k-extended` [dataset](https://github.com/malcolmosh/goodbooks-10k-extended), and the `Gutenberg Project` [datasets](http://aleph.gutenberg.org/).
@@ -28,4 +30,3 @@ You are welcome to remove block comments at line 60 to execute a short run for t
 
 We developed also a simple collaborative filtering model based on the `good-books-10k-extended` dataset. The model is given in `Notebooks/cf_model.py`, the initialization data (processed user-item matrix, with rows indexed by `book_id`, columns indexed by `user_id`, is given in `Data/Raw/ratings_for_cf.npz`. The metrics we chose to use is an approximate version of the adjusted cosine similarity, based on an 10-fold CV we ran testing with different metrics (other metrics are the basic cosine similarity paired with rating remapping methods or fixed baseline adjustments).
 
-## Visualizations and Interactivities
